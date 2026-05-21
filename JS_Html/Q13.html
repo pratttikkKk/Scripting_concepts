@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Key up page</title>
+</head>
+<body>
+<input type="text" placeholder="Type Here" id="name" onfocus="changecolor()" onkeyup="display()">
+<p id="result"></p>
+<script>
+function changecolor(){
+document.getElementById("name").style.backgroundColor="blue";
+}
+
+function display(){
+document.getElementById("result").innerHTML=document.getElementById("name").value;
+}
+</script>
+</body>
