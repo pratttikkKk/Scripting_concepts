@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+<input type="text" id="name" placeholder="enter your name">
+<br><br>
+<input type="number" id="number" placeholder="enter number">
+
+<br><br>
+
+<input type="password" id="password" placeholder="enter password">
+
+<br><br>
+
+<button id="button" onclick="validate()">Submit</Button>
+
+<script>
+
+function validate(){
+
+let name= document.getElementById("name").value;
+let pass= document.getElementById("password").value;
+
+if(name == ""){
+alert("Name is required");
+}
+
+else if(pass == ""){
+alert("Password is required");
+}
+
+else{
+alert("Login Successfull");
+}
+
+}
+
+
+</script>
+</body>
+</html>

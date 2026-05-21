@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+<textarea id="ta" onkeyup="count()"></textarea>
+<p id ="result"></p>
+
+<script>
+function count(){
+let data = document.getElementById("ta").value;
+number = data.length;
+document.getElementById("result").innerHTML= "data length ="+number;
+
+}
+</script>
+</body>
+</html>

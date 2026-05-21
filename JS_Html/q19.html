@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+<select id="course" onclick="show()">
+
+<option>Java</option>
+<option>Python</option>
+<option>Js</option>
+
+</select>
+<p id ="result"></p>
+
+<script>
+function show(){
+let course = document.getElementById("course").value;
+document.getElementById("result").innerHTML= course;
+
+}
+</script>
+</body>
+</html>
